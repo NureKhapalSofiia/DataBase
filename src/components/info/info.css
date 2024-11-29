@@ -1,0 +1,230 @@
+/* Контейнер страницы */
+.info {
+  position: relative;
+  background-image: url('./ground2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Слайд-картинка */
+.screen {
+  position: relative;
+  width: 1200px; /* Увеличенный размер слайда */
+  height: 600px; /* Пропорциональная высота */
+  background-image: url('./slide.svg'); /* Слайд-картинка */
+  background-size: contain; /* Полное покрытие картинки */
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Таблица поверх слайда */
+.screen table {
+  position: relative;
+  width: 30%; /* Уменьшенная ширина таблицы */
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.9); /* Белый полупрозрачный фон */
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px; /* Сделайте текст таблицы чуть меньше */
+}
+
+.info h1, .info p, .info table {
+  position: relative;          /* Чтобы текст оказался выше затемнения */
+  z-index: 2;                  /* Повышаем приоритет над затемнением */
+}
+  .info h1 {
+    font-family: 'Cinzel', sans-serif; /* Пример: Используем ваш шрифт */
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .info p {
+    font-family: 'Be Vietnam', sans-serif; /* Еще один шрифт */
+    font-size: 24px;
+  }
+
+  /* Стили для таблицы */
+table {
+  width: 100%; /* Растягиваем таблицу на всю ширину */
+  border-collapse: collapse; /* Убираем двойные границы */
+  margin: 20px 0; /* Отступ сверху и снизу */
+  font-size: 18px; /* Размер шрифта */
+  text-align: left; /* Текст по левому краю */
+  max-width: 1200px; /* Максимальная ширина (например, 1200px) */
+}
+
+/* Стили для заголовка таблицы */
+table thead tr {
+  background-color: #6a5acd; /* Фон заголовка (фиолетовый) */
+  color: #ffffff; /* Цвет текста заголовка */
+  text-align: left; /* Текст по левому краю */
+  font-weight: bold; /* Жирный шрифт */
+}
+
+/* Стили для ячеек заголовка */
+table th {
+  border: 1px solid #dddddd; /* Граница ячеек */
+  padding: 15px 15px; /* Внутренний отступ */
+  
+}
+
+/* Стили для четных строк */
+
+table tbody tr:nth-child(even) {
+  font-size: 12px;
+  padding: 10px 15px; /* Внутренний отступ */
+  background-color: #B8B4E1; /* Светло-серый фон */
+}
+
+/* Стили для нечетных строк */
+table tbody tr:nth-child(odd) {
+    padding: 10px 15px; /* Внутренний отступ */
+    font-size: 12px;
+  background-color: #D2CFEC; /* Белый фон */
+}
+
+/* Эффект при наведении */
+table tbody tr:hover {
+  background-color: #ddd; /* Фон при наведении */
+}
+
+.artifacts-table {
+  position: relative; /* Позволяет использовать `right` */
+  left: -6%; /* Или любое значение, чтобы сместить таблицу */
+  margin: 20px auto; /* Центрируем таблицу горизонтально */
+  width: 80%; /* Ширина таблицы (по умолчанию 80%) */
+  max-width: 1000px; /* Максимальная ширина таблицы */
+}
+
+.artifact-passive-skills-table {
+  position: relative; /* Позволяет использовать `right` */
+  right: 12%; /* Или любое значение, чтобы сместить таблицу */
+  margin: 20px auto; /* Центрируем таблицу горизонтально */
+  width: 80%; /* Ширина таблицы (по умолчанию 80%) */
+  max-width: 1000px; /* Максимальная ширина таблицы */
+}
+
+.weapons-table {
+  top:-10%;
+  position: relative; /* Позволяет использовать `right` */
+  left: 14%; /* Или любое значение, чтобы сместить таблицу */
+  margin: 20px auto; /* Центрируем таблицу горизонтально */
+  width: 80%; /* Ширина таблицы (по умолчанию 80%) */
+  max-width: 1000px; /* Максимальная ширина таблицы */
+}
+
+.weapon-passive-skills-table {
+  top:-10%;
+  position: relative; /* Позволяет использовать `right` */
+  right: -12%; /* Или любое значение, чтобы сместить таблицу */
+  margin: 20px auto; /* Центрируем таблицу горизонтально */
+  width: 80%; /* Ширина таблицы (по умолчанию 80%) */
+  max-width: 1000px; /* Максимальная ширина таблицы */
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menu button {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu button:hover {
+  background-color: #483d8b;
+}
+
+.update-recommendations-btn {
+  position: relative; /* Позволяет использовать `right` */
+  left: -70%; /* Или любое значение, чтобы сместить таблицу */
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  float: left; /* Кнопка будет слева */
+}
+
+.update-recommendations-btn:hover {
+  background-color: #483d8b;
+}
+
+.stat-form {
+  position: relative; /* Позволяет использовать `right` */
+  left: -55%;
+  top:25%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.stat-form input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.stat-form button {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.stat-form button:hover {
+  background-color: #483d8b;
+}
+
+.stat-result {
+  margin: 0; /* Убираем отступы сверху */
+  padding: 10px 15px; /* Внутренний отступ */
+  background-color: rgba(255, 255, 255, 0.9); /* Светлый полупрозрачный фон */
+  border: 1px solid #ddd; /* Легкая рамка */
+  border-radius: 8px; /* Закругленные углы */
+  font-size: 16px; /* Размер шрифта */
+  color: #333; /* Цвет текста */
+  max-width: 300px; /* Ограничиваем ширину */
+  text-align: center; /* Центрируем текст */
+}
+.all-character-stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
